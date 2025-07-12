@@ -12,7 +12,7 @@ const Header = () => {
         <div className="flex w-3/12 justify-end">
           <Image
             src="/sira-logo.png"
-            alt="logo-header"
+            alt="header-logo"
             width={150}
             height={75}
           />

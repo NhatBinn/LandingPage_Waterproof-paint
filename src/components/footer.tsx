@@ -62,7 +62,7 @@ const Footer = () => {
           <div className="flex flex-col">
             <Image
               src="/sira-logo.png"
-              alt="logo-header"
+              alt="footer-logo"
               width={125}
               height={75}
               className=" my-3 mx-2"

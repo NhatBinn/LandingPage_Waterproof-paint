@@ -6,13 +6,14 @@ interface BtnProps {
   text?: string;
   classCSS?: string;
   onClk?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  children?: React.ReactNode;
 }
 
-export function ButtonCm({ text, classCSS, onClk }: BtnProps) {
+export function ButtonCm({ text, classCSS, children, onClk }: BtnProps) {
   return (
     <div className="flex flex-wrap items-center gap-2 md:flex-row">
       <Button onClick={onClk} className={classCSS}>
-        {text}
+        {children ?? text}
       </Button>
     </div>
   );
