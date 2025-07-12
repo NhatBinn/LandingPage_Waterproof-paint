@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
