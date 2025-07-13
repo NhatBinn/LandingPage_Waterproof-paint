@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 
 interface itemProps {
   imgPath: string;
@@ -15,6 +18,7 @@ export default function ItemRender({
   productPriceTo,
   productPriceFrom,
 }: itemProps) {
+  const hr = "";
   return (
     <div className="group flex flex-col w-[280px] h-[400px] bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 p-3 my-6 mx-3 text-center">
       <div className="relative flex justify-center items-center mb-3">
@@ -23,17 +27,19 @@ export default function ItemRender({
         </div>
 
         {imgPathHover === "" && (
-          <Image
-            src={imgPath}
-            alt="product-logo"
-            width={250}
-            height={250}
-            className="object-contain transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1.5"
-          />
+          <Link href={hr}>
+            <Image
+              src={imgPath}
+              alt="product-logo"
+              width={250}
+              height={250}
+              className="object-contain transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1.5"
+            />
+          </Link>
         )}
 
         {imgPathHover !== "" && (
-          <>
+          <Link href={hr}>
             <Image
               src={imgPath}
               alt="product-logo"
@@ -47,12 +53,12 @@ export default function ItemRender({
               fill
               className="object-contain opacity-0 transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1.5 group-hover:opacity-100"
             />
-          </>
+          </Link>
         )}
       </div>
 
       <div className="mt-2 text-base font-bold text-gray-800 min-h-[48px]">
-        {productName}
+        <Link href={hr}>{productName}</Link>
       </div>
 
       <div className="border-t border-gray-200 my-2" />
