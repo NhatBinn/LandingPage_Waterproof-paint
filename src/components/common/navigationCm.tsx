@@ -35,25 +35,39 @@ export function NavigationCm() {
             <ul className="grid w-[300px] gap-4">
               <li>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Sơn chống thấm ngoài trời</Link>
+                  <Link href="/son-chong-tham/danh-muc-san-pham">
+                    Sơn chống thấm ngoài trời
+                  </Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Sơn chống thấm trong nhà</Link>
+                  <Link href="/son-chong-tham/danh-muc-san-pham">
+                    Sơn chống thấm trong nhà
+                  </Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Sơn chống thấm hồ cá</Link>
+                  <Link href="/son-chong-tham/danh-muc-san-pham">
+                    Sơn chống thấm hồ cá
+                  </Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Sơn chống thấm trần nhà</Link>
+                  <Link href="/son-chong-tham/danh-muc-san-pham">
+                    Sơn chống thấm trần nhà
+                  </Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Sơn chống gỉ</Link>
+                  <Link href="/son-chong-tham/danh-muc-san-pham">
+                    Sơn chống gỉ
+                  </Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Keo chống thấm trong suốt</Link>
+                  <Link href="/son-chong-tham/danh-muc-san-pham">
+                    Keo chống thấm trong suốt
+                  </Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Dụng cụ chống thấm</Link>
+                  <Link href="/son-chong-tham/danh-muc-san-pham">
+                    Dụng cụ chống thấm
+                  </Link>
                 </NavigationMenuLink>
               </li>
             </ul>

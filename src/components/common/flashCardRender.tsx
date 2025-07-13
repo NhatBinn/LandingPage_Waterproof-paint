@@ -32,9 +32,8 @@ export default function FlashCardRender({ items }: FlashCardProps) {
     const firstItem = sliderRef.current.children[0] as HTMLElement;
     if (!firstItem) return;
 
-    // Thêm khoảng cách (gap) vào chiều rộng của item để cuộn chính xác hơn
     const itemWidth = firstItem.offsetWidth;
-    const scrollAmount = itemWidth + 24; // 24px là giá trị của space-x-6
+    const scrollAmount = itemWidth + 24;
 
     if (direction === "right") {
       if (scrollWidth - scrollLeft - clientWidth < scrollAmount) {

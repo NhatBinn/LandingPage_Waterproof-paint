@@ -1,5 +1,4 @@
 // main page
-
 import { ButtonCm } from "@/components/common/buttonCm";
 import FlashCardRender from "@/components/common/flashCardRender";
 import ItemRender from "@/components/common/itemRender";
@@ -83,7 +82,6 @@ export default function Home() {
       {/* gioi thieu son chong tham */}
       <div className="w-full flex justify-center mt-20">
         <div className="w-full max-w-[1280px] text-left">
-          {/* logo + nội dung */}
           <div className="flex items-center">
             <Image
               src="/logo-single-opacity50-75x75px.png"
@@ -134,7 +132,6 @@ export default function Home() {
       {/* gioi thieu son chong tham NGOÀI TRỜI */}
       <div className="w-full flex justify-center mt-20">
         <div className="w-full max-w-[1280px] text-left">
-          {/* logo + nội dung */}
           <div className="flex items-center">
             <Image
               src="/logo-single-opacity50-75x75px.png"
@@ -190,7 +187,6 @@ export default function Home() {
       {/* gioi thieu son chong tham TRONG NHÀ */}
       <div className="w-full flex justify-center mt-20">
         <div className="w-full max-w-[1280px] text-left">
-          {/* logo + nội dung */}
           <div className="flex items-center">
             <Image
               src="/logo-single-opacity50-75x75px.png"
@@ -246,7 +242,6 @@ export default function Home() {
       {/* gioi thieu son chong tham SÂN THƯỢNG */}
       <div className="w-full flex justify-center mt-20">
         <div className="w-full max-w-[1280px] text-left">
-          {/* logo + nội dung */}
           <div className="flex items-center">
             <Image
               src="/logo-single-opacity50-75x75px.png"
@@ -295,7 +290,6 @@ export default function Home() {
       {/* gioi thieu son chong tham MÁI TÔN */}
       <div className="w-full flex justify-center mt-20">
         <div className="w-full max-w-[1280px] text-left">
-          {/* logo + nội dung */}
           <div className="flex items-center">
             <Image
               src="/logo-single-opacity50-75x75px.png"
