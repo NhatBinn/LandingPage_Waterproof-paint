@@ -13,7 +13,7 @@ interface tooltipProps {
 
 export function TooltipCm({ children, text, open, side }: tooltipProps) {
   return (
-    <Tooltip open={open}>
+    <Tooltip {...(open !== undefined ? { open } : {})}>
       <TooltipTrigger>{children}</TooltipTrigger>
       <TooltipContent side={side}>
         <p>{text}</p>

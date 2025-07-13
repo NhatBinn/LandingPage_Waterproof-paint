@@ -1,6 +1,7 @@
 "use client";
 
-import { Mails, Map, Phone } from "lucide-react";
+import { optionSelect } from "@/app/Constant";
+import { Facebook, Mails, Map, Music, Phone, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -29,13 +30,6 @@ const Footer = () => {
       return () => clearTimeout(timer);
     }
   }, [Sel_val, inp1_val, inp2_val]);
-
-  const optionSelect = [
-    { key: 0, value: "1", option: "Sân thượng, sàn mái" },
-    { key: 1, value: "2", option: "Tường ngoài" },
-    { key: 2, value: "3", option: "Bể cá, bể nước" },
-    { key: 3, value: "4", option: "Khác" },
-  ];
 
   const selectHandle = (value: string) => {
     console.log("select value ", value);
@@ -103,49 +97,49 @@ const Footer = () => {
 
           <div className="border-t border-gray-300 mt-6"></div>
 
-          <div className="flex flex-row mb-3 mx-2 mt-5">
+          <div className="flex flex-row mb-3 mt-5">
             <Link href="#" className="text-base font-medium">
               Sơn chống thấm
             </Link>
           </div>
 
-          <div className="flex flex-row my-3 mx-2">
+          <div className="flex flex-row my-3">
             <Link href="#" className="text-base font-medium">
               Sơn chống thấm ngoài trời
             </Link>
           </div>
 
-          <div className="flex flex-row my-3 mx-2">
+          <div className="flex flex-row my-3">
             <Link href="#" className="text-base font-medium">
               Sơn chống thấm trong nhà
             </Link>
           </div>
 
-          <div className="flex flex-row my-3 mx-2">
+          <div className="flex flex-row my-3">
             <Link href="#" className="text-base font-medium">
               Sơn chống thấm sân thượng
             </Link>
           </div>
 
-          <div className="flex flex-row my-3 mx-2">
+          <div className="flex flex-row my-3">
             <Link href="#" className="text-base font-medium">
               Sơn chống thấm mái tôn
             </Link>
           </div>
 
-          <div className="flex flex-row my-3 mx-2">
+          <div className="flex flex-row my-3">
             <Link href="#" className="text-base font-medium">
               Sơn chống thấm hồ cá
             </Link>
           </div>
 
-          <div className="flex flex-row my-3 mx-2">
+          <div className="flex flex-row my-3">
             <Link href="#" className="text-base font-medium">
               Sơn chống thấm sàn
             </Link>
           </div>
 
-          <div className="flex flex-row my-3 mx-2">
+          <div className="flex flex-row my-3">
             <Link href="#" className="text-base font-medium">
               Sơn chống thấm tường
             </Link>
@@ -160,34 +154,47 @@ const Footer = () => {
 
           <div className="border-t border-gray-300 mt-6"></div>
 
-          <div className="flex flex-row mb-3 mx-2 mt-5">
+          <div className="flex flex-row mb-3 mt-5">
             <Link href="#" className="text-base font-medium">
               Chính sách bảo hành
             </Link>
           </div>
 
-          <div className="flex flex-row my-3 mx-2">
+          <div className="flex flex-row my-3">
             <Link href="#" className="text-base font-medium">
               Chính sách bảo mật
             </Link>
           </div>
 
-          <div className="flex flex-row my-3 mx-2">
+          <div className="flex flex-row my-3">
             <Link href="#" className="text-base font-medium">
               Chính sách vận chuyển
             </Link>
           </div>
 
-          <div className="flex flex-row my-3 mx-2">
+          <div className="flex flex-row my-3">
             <Link href="#" className="text-base font-medium">
               Chính sách đổi trả hàng
             </Link>
           </div>
 
-          <div className="flex flex-row my-3 mx-2">
+          <div className="flex flex-row my-3">
             <Link href="#" className="text-base font-medium">
               Chính sách thanh toán
             </Link>
+          </div>
+          <div className="flex flex-row my-3">
+            <div className="flex space-x-4">
+              <TooltipCm text="Theo dõi trên Facebook" side="bottom">
+                <Facebook className="w-6 h-6 text-blue-900" />
+              </TooltipCm>
+              <TooltipCm text="Theo dõi trên Youtube" side="bottom">
+                <Youtube className="w-6 h-6 text-red-600" />
+              </TooltipCm>
+              <TooltipCm text="Theo dõi trên Tiktok" side="bottom">
+                <Music className="w-6 h-6  text-black" />
+              </TooltipCm>
+            </div>
           </div>
         </div>
 
@@ -199,7 +206,7 @@ const Footer = () => {
 
           <div className="border-t border-gray-300 mt-6"></div>
 
-          <div className="flex flex-row mb-3 mx-2 mt-5">
+          <div className="flex flex-row mb-3 mt-5">
             <p className="text-lg text-gray-500 font-medium">
               Để lại số điện thoại của bạn Sơn chống thấm SIRA sẽ liên hệ tư vấn
               ngay!
@@ -258,7 +265,7 @@ const Footer = () => {
         <div className="flex-1/6"></div>
       </div>
       <div className="flex flex-row bg-black text-white">
-        <p>dc lam boi hoang nhat</p>
+        <p>Dc lam boi hoang nhat</p>
       </div>
     </footer>
   );
